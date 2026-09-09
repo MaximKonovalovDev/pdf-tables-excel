@@ -1,0 +1,10 @@
+# DEV / SELFTEST ONLY - the product itself does NOT need this file.
+# Installed solely so scripts\selftest_pdf_tables.py can GENERATE small
+# sample PDFs with known tables before running the converter against them.
+#   uv pip install --python .venv\Scripts\python.exe -r requirements-dev.txt
+#
+# License note (checked in the installed wheel, not copied from memory):
+# fpdf2 2.8.8 ships LGPL-3.0. It is a development-time test utility here -
+# it never becomes part of the shipped product or its runtime install.bat,
+# which stays LGPL-clean (see THIRD-PARTY-NOTICES.md).
+fpdf2==2.8.8
